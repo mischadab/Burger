@@ -34,3 +34,22 @@
                 Burgers
             </div>
             
+            {{!-- Card to hold burger entries --}}
+            <div class="card-body">
+                {{#each burgers}}
+                {{#unless this.devoured}}
+                <p>{{this.burger_name}}</p>
+                <form action="/updateOne/{{this.id}}" method="POST">
+                <input type="hidden" name="id" value="{{this.id}}">
+                <input type="hidden" name="devoured" value='1'>
+                <button class="btn btn-outline-success" type="submit">Eat dat!<i class="fas fa-utensils"></i></button>
+                </form>
+                <br>
+                {{/unless}}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mt-4">
+        <div class="card border border-secondary devoured-card">
+            <div class="card-header bg-secondary text-white" id="devoured-card-header">Devoured Burgers</div>
