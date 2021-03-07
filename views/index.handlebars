@@ -3,3 +3,24 @@
     <h1 class="display-4 text-center"><img id= "baby-burger" src="/images/burger-outline-filled.png" class="img-fluid" alt="Responsive image"></h1>
         <p class="lead text-center">Welcome to EAT DAT Burger Bar!</p>
 </div>
+
+{{!-- Row to enter in desired burger --}}
+<div class="row">
+    <div class="col-md-12">
+        <div class="card border border-danger">
+            <div class="card-header bg-danger text-white">
+                Can I take your order?
+            </div>
+            {{!-- Create/add burger form --}}
+            <div class="card-body">
+                <form class="create-update-form" action="/insertOne" method="POST">
+                    <div class="form-group">
+                        <label for="burger">Place your order here:</label>
+                        <input type="text" class="form-control" name="burger_name" id="toGoBurger" placeholder="Write order here">
+                    </div>
+                    <button class="btn btn-danger" type="submit">Place order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
