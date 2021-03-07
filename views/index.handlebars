@@ -53,3 +53,17 @@
     <div class="col-md-6 mt-4">
         <div class="card border border-secondary devoured-card">
             <div class="card-header bg-secondary text-white" id="devoured-card-header">Devoured Burgers</div>
+
+                       {{!-- Card for the devoured burgers --}}
+            <div class="card-body">
+                {{#each burgers}}
+                {{#if this.devoured}}
+                <div class="devourBurger">
+                    <p>
+                        {{this.burger_name}}
+                    </p>
+                </div>
+                {{/if}}
+                {{/each}}
+            </div>
+
