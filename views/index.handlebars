@@ -11,6 +11,7 @@
             <div class="card-header bg-danger text-white">
                 Can I take your order?
             </div>
+
             {{!-- Create/add burger form --}}
             <div class="card-body">
                 <form class="create-update-form" action="/insertOne" method="POST">
@@ -24,3 +25,12 @@
         </div>
     </div>
 </div>
+
+{{!-- Section  with non-devoured burgers and devoured burgers --}}
+<div class="row mt-4">
+    <div class="col-md-6 mt-4">
+        <div class="card border border-secondary">
+            <div class="card-header bg-success text-white">
+                Burgers
+            </div>
+            
