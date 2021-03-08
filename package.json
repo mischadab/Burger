@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/mischadab/Burger/issues"
   },
-  "homepage": "https://github.com/mischadab/Burger#readme"
+  "homepage": "https://github.com/mischadab/Burger#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
