@@ -11,4 +11,4 @@ https://mischa-burger.herokuapp.com/
 npm install
 
 `` SCREENSHOTS ``
-![Burger App](public/images/SS1?raw=true)
+![Burger App](/public/images/SS1?raw=true)
